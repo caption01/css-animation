@@ -6,8 +6,9 @@ div {
   width: 150px;
   height: 150px;
   background-color: red;
-  animation-name: moving;
-  animation-duration: 3s;
+  animation: moving 3s infinite;
+  /* animation-name: moving; */
+  /* animation-duration: 3s; */
 }
 
 @keyframes moving {
@@ -16,10 +17,14 @@ div {
   }
 
   10% {
-    transform: translateX(1000px);
+    transform: translateX(200px);
+  }
+
+  70% {
+    transform: translate(200px, 500px);
   }
 
   100% {
-    transform: translate(1000px, 500px);
+    transform: translateX(0);
   }
 }
